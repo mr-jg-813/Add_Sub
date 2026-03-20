@@ -1,5 +1,5 @@
 # Add_Sub
-=> This is a device which can do both addition and subtraction operations, based on the control signal. if ctrl = 0; addition operation,
+=> This is a device which can do both addition and subtraction operations of 4 bits , based on the control signal. if ctrl = 0; addition operation,
 if ctrl = 1; subtraction operation.
 
 => add_sub has multiple types as shown below
