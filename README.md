@@ -1,5 +1,5 @@
 # Add_Sub
-## 🔧 Functionality
+##  Functionality
 
 This module is a **4-bit Adder-Subtractor** capable of performing both addition and subtraction operations based on a control signal.
 
@@ -8,11 +8,11 @@ This module is a **4-bit Adder-Subtractor** capable of performing both addition 
 
 ---
 
-## 🧩 Variants of `add_sub`
+##  Variants of `add_sub`
 
 The design includes multiple implementations with different behaviors:
 
-### ▶️ `add_sub_clk_cmp`
+###  `add_sub_clk_cmp`
 
 * Performs addition or subtraction based on `ctrl`
 * If the subtraction result is negative (i.e., in 2’s complement form), it converts it to its **actual magnitude**
@@ -21,7 +21,7 @@ The design includes multiple implementations with different behaviors:
 
 ---
 
-### ⚡ `add_sub_cmp`
+###  `add_sub_cmp`
 
 * Performs addition or subtraction based on `ctrl`
 * If the subtraction result is negative, it converts it to its **actual magnitude**
