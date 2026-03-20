@@ -1,9 +1,32 @@
 # Add_Sub
-=> This is a device which can do both addition and subtraction operations of 4 bits , based on the control signal. if ctrl = 0; addition operation,
-if ctrl = 1; subtraction operation.
+## 🔧 Functionality
 
-=> add_sub has multiple types as shown below
+This module is a **4-bit Adder-Subtractor** capable of performing both addition and subtraction operations based on a control signal.
 
---> add_sub_clk_cmp : will add or subtract and if subtracted value is negative or in 2's complement then it will find the actual value and this gives value on every positive clock cycle.
+* When `ctrl = 0` → Performs **Addition**
+* When `ctrl = 1` → Performs **Subtraction**
 
---> add_sub_cmp : will add or subtract and if subtracted value is negative or in 2's complement then it will find the actual value, and this will give output without any clock signal.
+---
+
+## 🧩 Variants of `add_sub`
+
+The design includes multiple implementations with different behaviors:
+
+### ▶️ `add_sub_clk_cmp`
+
+* Performs addition or subtraction based on `ctrl`
+* If the subtraction result is negative (i.e., in 2’s complement form), it converts it to its **actual magnitude**
+* Output is updated on every **positive clock edge**
+* Suitable for **synchronous designs**
+
+---
+
+### ⚡ `add_sub_cmp`
+
+* Performs addition or subtraction based on `ctrl`
+* If the subtraction result is negative, it converts it to its **actual magnitude**
+* Produces output **without requiring a clock signal**
+* Suitable for **combinational logic designs**
+
+---
+
