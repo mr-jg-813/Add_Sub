@@ -22,47 +22,34 @@ add_sub dut (
 always #5 clk = ~clk;
 
 initial begin
-
 clk = 0;
 
 A = 4'b0000;
 B = 4'b0000;
 ctrl = 0;
-
 #10;
 
 A = 4'b0101;
 B = 4'b0011;
-ctrl = 0;
-
 #10;
 
 A = 4'b1001;
 B = 4'b0010;
-ctrl = 0;
-
 #10;
 
 A = 4'b0110;
 B = 4'b0011;
 ctrl = 1;
-
 #10;
 
 A = 4'b0100;
 B = 4'b0111;
-ctrl = 1;
-
 #10;
 
 A = 4'b1111;
 B = 4'b0001;
-ctrl = 1;
-
-#20;
+#10;
 
 $stop;
-
 end
-
 endmodule
