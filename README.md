@@ -4,4 +4,6 @@ if ctrl = 1; subtraction operation.
 
 => add_sub has multiple types as shown below
 
-add_sub_clk_cmp : will add or subtract and if subtracted value is negative or in 2's complement then it will find the actual value and this gives value on every positive clock cycle.
+--> add_sub_clk_cmp : will add or subtract and if subtracted value is negative or in 2's complement then it will find the actual value and this gives value on every positive clock cycle.
+
+--> add_sub_cmp : will add or subtract and if subtracted value is negative or in 2's complement then it will find the actual value, and this will give output without any clock signal.
