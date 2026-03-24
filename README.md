@@ -16,7 +16,7 @@ A simple **4-bit Adder–Subtractor** that performs:
 | 0      | A + B     |
 | 1      | A - B     |
 
-👉 Subtraction is done as:
+ Subtraction is done as:
 `A + (~B + 1)`
 
 ---
@@ -43,7 +43,7 @@ A simple **4-bit Adder–Subtractor** that performs:
 * Converts negative results to **positive magnitude**
 * Stable & used in **sequential designs**
 
-👉 Flow:
+ Flow:
 
 ```
 Input → XOR (B) → RCA → Magnitude Fix → Register → Output
@@ -58,7 +58,7 @@ Input → XOR (B) → RCA → Magnitude Fix → Register → Output
 * Also converts negative result to **magnitude**
 * Faster but no storage
 
-👉 Flow:
+ Flow:
 
 ```
 Input → XOR (B) → RCA → Magnitude Fix → Output
@@ -78,7 +78,7 @@ Input → XOR (B) → RCA → Magnitude Fix → Output
 
 ##  Features
 
-* ✔️ Addition & Subtraction in one circuit
-* ✔️ 2’s complement based design
-* ✔️ Both **combinational + sequential** versions
-* ✔️ Easy to extend to higher bits
+*  Addition & Subtraction in one circuit
+*  2’s complement based design
+*  Both **combinational + sequential** versions
+*  Easy to extend to higher bits
